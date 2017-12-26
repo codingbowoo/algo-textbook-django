@@ -5,7 +5,7 @@ from .forms import QuestionForm
 
 
 def question_list(request):
-    questions = Question.objects.filter().order_by()
+    questions = Question.objects.filter().order_by('-published_date')
     return render(request, 'ask/question_list.html', {'questions': questions})
 
 
