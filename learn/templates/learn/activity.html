@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block content %}
+
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
@@ -11,8 +12,9 @@
         </div>
     </nav>
 
+<!--<div id="content-box" class="col-sm-offset-2 col-sm-8">-->
     <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-4 col-md-4">
             <div class="thumbnail">
                 <img src="{% static "img/jamjam.png" %}" width="281" alt="활동지">
                 <div class="caption">
@@ -27,52 +29,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-4 col-md-4">
             <div class="thumbnail">
-                <img src="{% static "img/activity1.png" %}" width="281" alt="활동지">
+                <img src="{% static "img/activity2.png" %}" width="281" alt="활동지">
                 <div class="caption">
-                    <h3>활동2</h3>
-                    <p>2222222222222222222222222</p>
+                    <h3>업다운 숫자 맞히기</h3>
+                    <p>0에서 99까지의 수 중 하나를 결정했습니다. 최소한의 대답으로 결정한 수가 무엇인지 맞혀보세요.</p>
                     <p>
-                        <a href="#"
-                           target="_blank" class="btn btn-primary" role="button">바로가기</a>
-                        <a href="#" class="btn btn-default" role="button">Button</a>
+                        <a href="https://goo.gl/eJzLEC"
+                           target="_blank" class="btn btn-primary" role="button">1조</a>
+                        <a href="https://goo.gl/vxy257" class="btn btn-default" role="button">2조</a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="{% static "img/activity1.png" %}" width="281" alt="활동지">
-                <div class="caption">
-                    <h3>활동3</h3>
-                    <p>333333333333333333333333333</p>
-                    <p>
-                        <a href="#"
-                           target="_blank" class="btn btn-primary" role="button">바로가기</a>
-                        <a href="#" class="btn btn-default" role="button">Button</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="content-box" class="col-sm-offset-2 col-sm-8">
-        <div class="row">
-            <!-- textcontents use id="text-box" title should be <h3></h3> -->
-            <div id="text-box">
-
-            </div>
-
-            <!-- in case of media contents, use id="media-box" -->
-            <div id="media-box">
-                <img src="expression_1_timetable.jpg" alt="there's no media yet" class="img-responsive">
-                <img src="express_1_flowchart.jpg" alt="there's no media yet" class="img-responsive">
-                <img src="#" alt="there's no media yet" class="img-responsive">
-            </div>
-        </div>
-    </div>
-
+<!--    </div>-->
 
 {% endblock %}

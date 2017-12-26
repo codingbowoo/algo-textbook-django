@@ -50,7 +50,7 @@
                 <p> 모둠끼리 모여 업다운 숫자 맞히기 게임을 해봅시다. 이 게임을 어떻게 어떻게 알고리즘적으로 표현할 수 있을까요? </p>
                 <a href="https://playentry.org/entry-beta/54b3194e1c83348e4b2f269c#!/" role="button"
                    class="btn btn-outline-info btn-lg" target="_blank"> 게임하러 가기 : 업다운 숫자 맞히기 게임!</a>
-                <a href="https://drive.google.com/drive/folders/1lqRObwY5zZ2aDypcoziK9Re_u_Iq4N68?usp=sharing"
+                <a href="{% url 'group_activity' %}"
                    role="button" class="btn btn-outline-info btn-lg" target="_blank"> 모둠 활동 하러 가기</a>
             </div>
 
@@ -83,7 +83,7 @@
 
             <div id="text-box">
                 <ul class="pager">
-                    <li class="previous"><a href="./e2_structure.html">&larr; 이전 페이지</a></li>
+                    <li class="previous"><a href="{% url 'e2' %}">&larr; 이전 페이지</a></li>
                     <li class="next disabled"><a href="#">다음 페이지 &rarr;</a></li>
                 </ul>
             </div>
